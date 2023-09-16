@@ -20,7 +20,7 @@ jobs:
       - run: npm run test
   deploy-production:
     runs-on: ubuntu-latest
-    depends: run-tests
+    needs: run-tests
     steps:
       - uses: actions/checkout@v2
       - name: Install Vercel CLI
