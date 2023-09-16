@@ -16,7 +16,6 @@ jobs:
         with:
           node-version: "18.x"
       - run: npm ci
-      - run: npm run build --if-present
       - run: npm run test
   deploy-production:
     runs-on: ubuntu-latest
